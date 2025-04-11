@@ -1,0 +1,172 @@
+/* General settings - Minimalist style 1:1 with reference, different colors */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Main blog title - Larger and centered */
+.main-blog-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-blog-title h1 {
+    margin: 0;
+    color: #e0e1dd;
+    font-size: 3em; /* Larger font size */
+    font-weight: bold;
+}
+
+/* Sidebar - fixed to the top-left */
+.sidebar {
+    width: 200px;
+    height: 100vh; /* Make it take the full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0d1b2a;
+    padding: 15px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.subscribe-area {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.email-input {
+    flex-grow: 1;
+    padding: 6px 4px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    background-color: #1b263b;
+    border: 1px solid #415a77;
+    color: #e0e1dd;
+    font-size: 0.85em;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+/* Fake button - minimalist style */
+.fake-button {
+    display: block;
+    padding: 6px 10px;
+    background-color: #415a77;
+    color: #e0e1dd;
+    text-align: center;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    cursor: default;
+    pointer-events: none;
+    user-select: none;
+    border: none;
+    border-radius: 0;
+    white-space: nowrap;
+}
+
+/* Static links - exactly as in the reference */
+.static-links {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.static-links p {
+    margin: 4px 0;
+    color: #e0e1dd;
+    font-size: 0.85em;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: default;
+    user-select: none;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 200px; /* Sidebar width */
+    padding: 15px 25px;
+    width: 80%;
+    box-sizing: border-box;
+    padding-top: 80px; /* Add some top padding to avoid overlap with the title */
+}
+
+/* Blog header - minimalist */
+.blog-header {
+    text-align: left;
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+}
+
+.blog-header h1 {
+    margin: 0 0 4px 0;
+    color: #e0e1dd;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/* Individual posts - minimalist style */
+.post {
+    margin-bottom: 25px;
+}
+
+.post h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #e0e1dd;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Images - centered */
+.post img,
+.travel-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    border-radius: 0;
+    margin: 10px auto; /* Center the images with top and bottom margin */
+}
+
+.post p {
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    color: #e0e1dd;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+/* Description for the image */
+.image-description {
+    color: #adb5bd;
+    font-size: 0.85em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Travel section */
+.travel-section h3 {
+     margin-top: 15px;
+     margin-bottom: 8px;
+     color: #e0e1dd;
+     font-size: 1.15em;
+     font-weight: bold;
+    padding-bottom: 0;
+ }
+
+ /* Ensure the last element doesn't have too much bottom margin */
+ .post:last-child {
+     margin-bottom: 0;
+ }
